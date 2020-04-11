@@ -295,6 +295,7 @@ function Resources(props) {
               className="button is-purple"
               disabled={!indianstate}
               onClick={filterTable}
+              style={!indianstate ? {pointerEvents: 'none'} : null}
             >
               Search
             </button>
