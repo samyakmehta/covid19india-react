@@ -164,6 +164,7 @@ function Resources(props) {
       {
         Header: 'Source',
         accessor: 'contact',
+        isVisible: false,
       },
     ],
     []
@@ -474,15 +475,6 @@ function Resources(props) {
                   horizontal: 'right',
                 }}
               >
-                <h5
-                  style={{
-                    paddingLeft: '0.5rem',
-                    color: '#ff073a99',
-                    margin: '0.1rem 0rem',
-                  }}
-                >
-                  Disclaimer
-                </h5>
                 <h6
                   style={{
                     paddingLeft: '0.5rem',
@@ -631,17 +623,18 @@ function Resources(props) {
                 >
                   Search
                 </button>
-                <a
+                <button
                   onClick={openSharingTray}
                   className="button add-entry is-purple"
                   style={{
                     margin: '0.2rem 0.2rem',
                     padding: '0.5rem 0.5rem',
                     width: '50%',
+                    justifyContent: 'center',
                   }}
                 >
                   <span>Share</span>
-                </a>
+                </button>
               </div>
             </div>
           </React.Fragment>
@@ -689,16 +682,6 @@ function Resources(props) {
                   horizontal: 'right',
                 }}
               >
-                <h5
-                  style={{
-                    paddingLeft: '0.5rem',
-                    color: '#ff073a99',
-                    margin: '0.1rem 0rem',
-                  }}
-                >
-                  Disclaimer
-                </h5>
-
                 <h6
                   style={{
                     paddingLeft: '0.5rem',
@@ -844,13 +827,13 @@ function Resources(props) {
               >
                 <span>Feedback</span>
               </a>
-              <a
+              <button
                 onClick={openSharingTray}
                 className="button add-entry is-purple"
                 style={{margin: '0rem 0.2rem', padding: '0.4rem'}}
               >
                 <span>Share</span>
-              </a>
+              </button>
             </div>
           </React.Fragment>
         )}
